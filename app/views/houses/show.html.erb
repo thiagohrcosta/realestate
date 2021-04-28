@@ -1,6 +1,6 @@
 <div class="banner img-show" style="background-image: url(<%= @house.photo %>);">
   <div class="container">
-
+    <%= render 'navbar' %>
   </div>
 </div>
 
@@ -9,7 +9,7 @@
   <div class="container container-bg">
     <div class="show-content">
       <h1><%= @house.title %></h1>
-      <h2><%= @house.address %></h2>
+      <h3 class="house-address"><%= @house.address %></h3>
       <p><%= @house.description %></p>
       <div>
         <p><i class="fas fa-bed fa-2x mr-2"></i> Bedroom(s): <%= @house.bedroom%></p>
