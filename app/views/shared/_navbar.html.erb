@@ -1,10 +1,6 @@
-<div class="mainBanner">
-
-  <div class="container">
-
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <%= link_to "#", class: "navbar-brand" do %>
-    <h2>Real State</h2>
+    <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
     <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,7 +9,7 @@
 
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mt-5 ml-auto">
+    <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li class="nav-item active">
           <%= link_to "Home", "#", class: "nav-link" %>
@@ -36,27 +32,4 @@
       <% end %>
     </ul>
   </div>
-</div>
-
-
-  </div>
-
-</div>
-
-<div class="houses-container">
-  <div class="container">
-
-    <div class="house-grid">
-      <% @houses.each do |house| %>
-      <div class="house-box">
-        <img class="img-house" src="<%= house.photo %>">
-        <p class="menu-title"><%= link_to house.title, house_path(house) %></p>
-        <div class="">
-          <p class="menu-price"></p>
-        </div>
-      </div>
-      <% end %>
-    </div>
-  </div>
-
 </div>
