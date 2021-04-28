@@ -1,0 +1,17 @@
+.mainBanner{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("https://res.cloudinary.com/dloadb2bx/image/upload/v1619573682/photo-1513584684374-8bab748fbf90_lcztvh.jpg");
+  height: 80vh;
+  background-size: 100% 100%;
+}
+.custom-navbar{
+  background-color: #061539;
+}
+
+.nav-container{
+  display: flex;
+  jutify-content: space-between;
+
+}
