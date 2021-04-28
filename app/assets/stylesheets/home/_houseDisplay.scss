@@ -10,9 +10,10 @@
   }
 
   .house-box{
+    position: relative;
     background-color: #fff;
     margin: 10px 0 20px;
-    max-height: 350px;
+    max-height: 380px;
     border: 1px solid #E8E8E8;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   }
@@ -21,6 +22,25 @@
     width: 100%;
     height: 300px;
   }
+
+  .house-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .menu-title{
+    padding: 5px;
+  }
+
+  .house-price{
+    font-weight: bold;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 25px;
+    background-color: #00adb5;
+  }
+
 
 }
 

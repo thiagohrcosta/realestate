@@ -8,8 +8,20 @@
 <div>
   <div class="container container-bg">
     <div class="show-content">
-      <h1><%= @house.title %></h1>
-      <h3 class="house-address"><%= @house.address %></h3>
+      <div class="header-content">
+        <div>
+          <h1><%= @house.title %></h1>
+          <h3 class="house-address"><%= @house.address %></h3>
+        </div>
+        <div>
+          <%= link_to "Edit", edit_house_path(@house), class: "btn-edit-house" %>
+          <%= link_to "Delete", @house, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-delete-house" %>
+
+
+        </div>
+
+      </div>
+
       <p><%= @house.description %></p>
       <div>
         <p><i class="fas fa-bed fa-2x mr-2"></i> Bedroom(s): <%= @house.bedroom%></p>

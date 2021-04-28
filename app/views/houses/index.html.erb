@@ -9,14 +9,18 @@
 
 </div>
 
+
 <div class="houses-container">
   <div class="container">
 
     <div class="house-grid">
-      <% @houses.each do |house| %>
+      <% @houses.limit(4).each do |house| %>
       <div class="house-box">
         <img class="img-house" src="<%= house.photo %>">
-        <p class="menu-title"><%= link_to house.title, house_path(house) %></p>
+        <div class="house-content">
+          <p class="menu-title"><%= link_to house.title, house_path(house) %></p>
+          <p class="house-price"><%= number_to_currency(house.price) %></p>
+        </div>
         <div class="">
           <p class="menu-price"></p>
         </div>
