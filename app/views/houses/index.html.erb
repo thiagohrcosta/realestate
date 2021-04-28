@@ -32,3 +32,21 @@
   </div>
 
 </div>
+
+<div class="houses-container">
+  <div class="container">
+
+    <div class="house-grid">
+      <% @houses.each do |house| %>
+      <div class="house-box">
+        <img class="img-house" src="<%= house.photo %>">
+        <p class="menu-title"><%= link_to house.title, house_path(house) %></p>
+        <div class="">
+          <p class="menu-price"></p>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>
