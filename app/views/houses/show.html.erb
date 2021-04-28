@@ -1,0 +1,21 @@
+<div class="banner img-show" style="background-image: url(<%= @house.photo %>);">
+  <div class="container">
+
+  </div>
+</div>
+
+
+<div>
+  <div class="container container-bg">
+    <div class="show-content">
+      <h1><%= @house.title %></h1>
+      <h2><%= @house.address %></h2>
+      <p><%= @house.description %></p>
+      <div>
+        <p><i class="fas fa-bed fa-2x mr-2"></i> Bedroom(s): <%= @house.bedroom%></p>
+        <p><i class="fas fa-shower fa-2x mr-2"></i> Bathroom(s): <%= @house.bathroom %></p>
+      </div>
+    </div>
+  </div>
+</div>
+
